@@ -35,9 +35,21 @@ public class DontGiveMeFive {
     return array.size();
   }
     
+    public static int dontGiveMeFivev2(int start, int end) {
+        
+        int ans = 0;
+        
+        for(int i = start; i <= end; i++) {
+            if(!("" + i).contains("5")) ans++;
+        }
+        
+        return ans;
+    }
+    
     public static void main(String[] args) {
         
         System.out.println(dontGiveMeFive(4, 16));
+        System.out.println(dontGiveMeFivev2(4, 16));
         
     }
     

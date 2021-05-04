@@ -38,7 +38,7 @@ public class SumOfSeries {
     
     public static void main(String[] args) {
                
-        System.out.println(seriesSum(15));
+        System.out.println(seriesSum(80));
     }
 
 }

@@ -1,3 +1,8 @@
+
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
 /*
  * Copyright 2021 Sean Campbell
  */
@@ -25,6 +30,17 @@ public class ReversedSentence {
    }
    return result;
  }
+   
+   public static String reverseWords2(String str) {
+       
+       List words = Arrays.asList(str.split(" "));
+       
+       Collections.reverse(words);
+       
+       //String result = String.join(" ", words);
+       
+       return String.join(" ", words);
+   }
    
     public static void main(String[] args) {
         

@@ -44,11 +44,30 @@ public class MoneyMoneyMoney {
     return true;
   }
     
+    public static boolean isAnagram2(String test, String original) {
+        
+        if(test == null || original == null || test.length() != original.length()) {
+            return false;
+        }
+        
+        char[] ch1 = original.toLowerCase().toCharArray();
+        char[] ch2 = test.toLowerCase().toCharArray();
+        
+        Arrays.sort(ch1);
+        Arrays.sort(ch2);
+        
+        return Arrays.equals(ch1, ch2);
+        
+    }
+    
     
     public static void main(String[] args) {
         
         
         System.out.println(isAnagram("apple", "pale"));
+        System.out.println("");
+        System.out.println(isAnagram2("apple", "pale"));
+        System.out.println(isAnagram2("apple", "palep"));
     }
     
 }
