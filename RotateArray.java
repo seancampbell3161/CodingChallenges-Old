@@ -22,14 +22,10 @@ public class RotateArray {
             
             for(j = nums.length - 1; j>0; j--) {
                 nums[j] = nums[j-1];
-            }
-            
-            nums[0] = last;
-            
-        }
-        
-        System.out.print("[");
-        
+            }         
+            nums[0] = last;           
+        }      
+        System.out.print("[");       
         for (int n : nums) {
             System.out.print(n);
             if(n != nums.length-1) {
